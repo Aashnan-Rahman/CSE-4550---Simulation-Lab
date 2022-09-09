@@ -1,0 +1,72 @@
+#ifndef event_h
+#define event_h
+
+class Server;
+
+class Event
+{
+	public:
+		Event (Server* s) : server (s) {
+ 			stime_ = 0.0;
+			rtime_ = 0.0;
+		}
+
+   		inline int& eventType () { return (eventType_); }
+		inline double& expire () { return (rtime_); }
+		inline double& start () { return (stime_); }
+
+		void activate (double t);
+		//void cancel ();
+		virtual void handle () = 0;
+
+		Event* next_;
+	protected:
+		Server* server;
+
+	private:
+		int eventType_;	// represented by event id
+		double stime_;
+		double rtime_;
+		int status_;
+};
+
+class SupplyEvent : public Event
+{
+	public:
+ 		SupplyEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
+class TerminationEvent : public Event
+{
+	public:
+		TerminationEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
+class DemandEvent : public Event
+{
+	public:
+ 		DemandEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
+class EvaluationEvent : public Event
+{
+	public:
+		EvaluationEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
