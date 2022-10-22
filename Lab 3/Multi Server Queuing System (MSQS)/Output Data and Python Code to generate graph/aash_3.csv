@@ -1,0 +1,7 @@
+Traffic Intensity,Average Queue Delay(Queue 1),Average Queue Length(Queue 1),Average System Delay(Queue 1),Average Queue Delay(Queue 2),Average Queue Length(Queue 2),Average System Delay(Queue 2)
+0.5,19.3052,1.7709,28.6008,19.2543,1.55471,28.735
+0.6,12.8701,1.10969,22.4816,13.0945,0.957208,22.77
+0.7,9.51602,0.736547,19.1117,9.66004,0.58542,19.7441
+0.8,6.03249,0.434747,15.3836,6.18064,0.326961,16.3796
+0.9,5.33757,0.355141,15.006,5.78934,0.265497,16.2003
+1,4.82926,0.29813,14.7921,4.81173,0.199506,14.8547
