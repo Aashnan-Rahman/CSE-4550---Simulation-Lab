@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1666422665 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\facility.cpp
+	"server.h"
+
+1666422259 d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\server.h
+	"event.h"
+	"queue.h"
+	"scheduler.h"
+	"facility.h"
+	<math.h>
+	<iostream>
+	<fstream>
+
+1666079465 d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\event.h
+
+1666421647 d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\queue.h
+
+1666079503 d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\scheduler.h
+	"event.h"
+
+1666422581 d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\facility.h
+	"server.h"
+	<fstream>
+
+1666422945 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\main.cpp
+	<iostream>
+	<fstream>
+	<time.h>
+	"scheduler.h"
+	"facility.h"
+
+1666421612 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\queue.cpp
+	"queue.h"
+
+1666079523 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\scheduler.cpp
+	"scheduler.h"
+	"event.h"
+	<iostream>
+	<fstream>
+
+1666422911 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\server.cpp
+	"server.h"
+	"scheduler.h"
+	"server.h"
+	"facility.h"
+	<malloc.h>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1666422091 source:d:\iut academic\5th semester\cse 4550\lab 3\msqs_3\event.cpp
+	"event.h"
+	"server.h"
+	"scheduler.h"
+
