@@ -1,0 +1,504 @@
+trace file for the simulation
+format of the file
+<event> <server id> <time> <item id> <server status> <queue size>
+
+	interarrival time = 17.0687
+a	2	17.0687	1	0	0
+s	2	17.0687	1	1	0
+	service time = 14.3248
+	interarrival time = 2.20728
+a	2	19.276	2	1	0
+	interarrival time = 3.03069
+a	1	22.3067	3	0	0
+s	1	22.3067	3	1	0
+	service time = 28.9334
+	interarrival time = 15.6678
+d	2	31.3935	1	1	1
+s	2	31.3935	2	1	0
+	service time = 7.22726
+a	2	37.9745	4	1	0
+	interarrival time = 2.22938
+d	2	38.6208	2	1	1
+s	2	38.6208	4	1	0
+	service time = 1.54934
+d	2	40.1701	4	0	0
+a	2	40.2039	5	0	0
+s	2	40.2039	5	1	0
+	service time = 1.26931
+	interarrival time = 19.3995
+d	2	41.4732	5	0	0
+d	1	51.24	3	0	0
+a	2	59.6033	6	0	0
+s	2	59.6033	6	1	0
+	service time = 22.952
+	interarrival time = 14.618
+a	2	74.2213	7	1	0
+	interarrival time = 4.89698
+a	1	79.1183	8	0	0
+s	1	79.1183	8	1	0
+	service time = 11.8704
+	interarrival time = 2.8871
+a	1	82.0054	9	1	0
+	interarrival time = 12.9754
+d	2	82.5553	6	1	1
+s	2	82.5553	7	1	0
+	service time = 9.83325
+d	1	90.9887	8	1	1
+s	1	90.9887	9	1	0
+	service time = 1.88819
+d	2	92.3885	7	0	0
+d	1	92.8769	9	0	0
+a	2	94.9809	10	0	0
+s	2	94.9809	10	1	0
+	service time = 9.87904
+	interarrival time = 0.0477226
+a	2	95.0286	11	1	0
+	interarrival time = 0.663652
+a	1	95.6922	12	0	0
+s	1	95.6922	12	1	0
+	service time = 7.90278
+	interarrival time = 25.2778
+d	1	103.595	12	0	0
+d	2	104.86	10	1	1
+s	2	104.86	11	1	0
+	service time = 5.70301
+d	2	110.563	11	0	0
+a	2	120.97	13	0	0
+s	2	120.97	13	1	0
+	service time = 2.1602
+	interarrival time = 20.5339
+d	2	123.13	13	0	0
+a	2	141.504	14	0	0
+s	2	141.504	14	1	0
+	service time = 20.6728
+	interarrival time = 8.15825
+a	2	149.662	15	1	0
+	interarrival time = 8.24627
+a	1	157.908	16	0	0
+s	1	157.908	16	1	0
+	service time = 7.00099
+	interarrival time = 29.3554
+d	2	162.177	14	1	1
+s	2	162.177	15	1	0
+	service time = 25.4318
+d	1	164.909	16	0	0
+a	2	187.264	17	1	0
+	interarrival time = 2.85335
+d	2	187.608	15	1	1
+s	2	187.608	17	1	0
+	service time = 7.4023
+a	2	190.117	18	1	0
+	interarrival time = 5.33366
+d	2	195.011	17	1	1
+s	2	195.011	18	1	0
+	service time = 10.655
+a	2	195.451	19	1	0
+	interarrival time = 7.30425
+a	1	202.755	20	0	0
+s	1	202.755	20	1	0
+	service time = 11.2932
+	interarrival time = 25.0062
+d	2	205.666	18	1	1
+s	2	205.666	19	1	0
+	service time = 11.1498
+d	1	214.048	20	0	0
+d	2	216.816	19	0	0
+a	2	227.761	21	0	0
+s	2	227.761	21	1	0
+	service time = 9.01432
+	interarrival time = 25.5608
+d	2	236.776	21	0	0
+a	2	253.322	22	0	0
+s	2	253.322	22	1	0
+	service time = 2.40754
+	interarrival time = 4.03255
+d	2	255.73	22	0	0
+a	2	257.355	23	0	0
+s	2	257.355	23	1	0
+	service time = 0.322223
+	interarrival time = 1.93993
+d	2	257.677	23	0	0
+a	2	259.294	24	0	0
+s	2	259.294	24	1	0
+	service time = 3.50585
+	interarrival time = 25.3738
+d	2	262.8	24	0	0
+a	2	284.668	25	0	0
+s	2	284.668	25	1	0
+	service time = 10.9672
+	interarrival time = 4.40338
+a	2	289.072	26	1	0
+	interarrival time = 10.3971
+d	2	295.635	25	1	1
+s	2	295.635	26	1	0
+	service time = 15.2315
+a	2	299.469	27	1	0
+	interarrival time = 8.9454
+a	1	308.414	28	0	0
+s	1	308.414	28	1	0
+	service time = 3.73288
+	interarrival time = 17.16
+d	2	310.867	26	1	1
+s	2	310.867	27	1	0
+	service time = 5.86628
+d	1	312.147	28	0	0
+d	2	316.733	27	0	0
+a	2	325.574	29	0	0
+s	2	325.574	29	1	0
+	service time = 1.60401
+	interarrival time = 13.3824
+d	2	327.178	29	0	0
+a	2	338.957	30	0	0
+s	2	338.957	30	1	0
+	service time = 0.795952
+	interarrival time = 8.96932
+d	2	339.752	30	0	0
+a	2	347.926	31	0	0
+s	2	347.926	31	1	0
+	service time = 4.88802
+	interarrival time = 10.9362
+d	2	352.814	31	0	0
+a	2	358.862	32	0	0
+s	2	358.862	32	1	0
+	service time = 3.37584
+	interarrival time = 2.5688
+a	2	361.431	33	1	0
+	interarrival time = 35.0251
+d	2	362.238	32	1	1
+s	2	362.238	33	1	0
+	service time = 9.64173
+d	2	371.88	33	0	0
+a	2	396.456	34	0	0
+s	2	396.456	34	1	0
+	service time = 17.6773
+	interarrival time = 18.7003
+d	2	414.133	34	0	0
+a	2	415.156	35	0	0
+s	2	415.156	35	1	0
+	service time = 48.481
+	interarrival time = 0.427414
+a	2	415.584	36	1	0
+	interarrival time = 11.9457
+a	1	427.529	37	0	0
+s	1	427.529	37	1	0
+	service time = 0.0772039
+	interarrival time = 11.298
+d	1	427.607	37	0	0
+a	1	438.827	38	0	0
+s	1	438.827	38	1	0
+	service time = 0.792978
+	interarrival time = 7.52784
+d	1	439.62	38	0	0
+a	1	446.355	39	0	0
+s	1	446.355	39	1	0
+	service time = 1.09652
+	interarrival time = 5.52432
+d	1	447.452	39	0	0
+a	1	451.879	40	0	0
+s	1	451.879	40	1	0
+	service time = 3.48162
+	interarrival time = 15.5761
+d	1	455.361	40	0	0
+d	2	463.637	35	1	1
+s	2	463.637	36	1	0
+	service time = 11.9306
+a	2	467.456	41	1	0
+	interarrival time = 1.95958
+a	1	469.415	42	0	0
+s	1	469.415	42	1	0
+	service time = 6.43292
+	interarrival time = 16.813
+d	2	475.568	36	1	1
+s	2	475.568	41	1	0
+	service time = 3.0084
+d	1	475.848	42	0	0
+d	2	478.576	41	0	0
+a	2	486.228	43	0	0
+s	2	486.228	43	1	0
+	service time = 8.59838
+	interarrival time = 0.195695
+a	2	486.424	44	1	0
+	interarrival time = 27.7207
+d	2	494.826	43	1	1
+s	2	494.826	44	1	0
+	service time = 10.9855
+d	2	505.812	44	0	0
+a	2	514.145	45	0	0
+s	2	514.145	45	1	0
+	service time = 20.0532
+	interarrival time = 1.0649
+a	2	515.209	46	1	0
+	interarrival time = 5.55459
+a	1	520.764	47	0	0
+s	1	520.764	47	1	0
+	service time = 3.15836
+	interarrival time = 0.275372
+a	1	521.039	48	1	0
+	interarrival time = 1.46171
+a	2	522.501	49	1	1
+	interarrival time = 5.6245
+d	1	523.922	47	1	1
+s	1	523.922	48	1	0
+	service time = 25.5529
+a	1	528.126	50	1	0
+	interarrival time = 1.18065
+a	1	529.306	51	1	1
+	interarrival time = 11.369
+d	2	534.198	45	1	2
+s	2	534.198	46	1	1
+	service time = 11.297
+a	2	540.675	52	1	1
+	interarrival time = 14.3851
+d	2	545.495	46	1	2
+s	2	545.495	49	1	1
+	service time = 2.51371
+d	2	548.008	49	1	1
+s	2	548.008	52	1	0
+	service time = 4.02524
+d	1	549.475	48	1	2
+s	1	549.475	50	1	1
+	service time = 1.31341
+d	1	550.789	50	1	1
+s	1	550.789	51	1	0
+	service time = 1.54685
+d	2	552.034	52	0	0
+d	1	552.336	51	0	0
+a	2	555.06	53	0	0
+s	2	555.06	53	1	0
+	service time = 1.49816
+	interarrival time = 14.035
+d	2	556.559	53	0	0
+a	2	569.095	54	0	0
+s	2	569.095	54	1	0
+	service time = 3.35917
+	interarrival time = 7.14648
+d	2	572.455	54	0	0
+a	2	576.242	55	0	0
+s	2	576.242	55	1	0
+	service time = 0.364863
+	interarrival time = 4.88702
+d	2	576.607	55	0	0
+a	2	581.129	56	0	0
+s	2	581.129	56	1	0
+	service time = 6.2705
+	interarrival time = 9.2071
+d	2	587.399	56	0	0
+a	2	590.336	57	0	0
+s	2	590.336	57	1	0
+	service time = 3.13161
+	interarrival time = 31.103
+d	2	593.468	57	0	0
+a	2	621.439	58	0	0
+s	2	621.439	58	1	0
+	service time = 9.02636
+	interarrival time = 15.824
+d	2	630.465	58	0	0
+a	2	637.263	59	0	0
+s	2	637.263	59	1	0
+	service time = 12.1174
+	interarrival time = 4.70999
+a	2	641.973	60	1	0
+	interarrival time = 23.4839
+d	2	649.38	59	1	1
+s	2	649.38	60	1	0
+	service time = 31.1099
+a	2	665.457	61	1	0
+	interarrival time = 7.74198
+a	1	673.199	62	0	0
+s	1	673.199	62	1	0
+	service time = 1.42012
+	interarrival time = 1.74945
+d	1	674.619	62	0	0
+a	1	674.948	63	0	0
+s	1	674.948	63	1	0
+	service time = 9.92999
+	interarrival time = 1.34059
+a	1	676.289	64	1	0
+	interarrival time = 13.4513
+d	2	680.49	60	1	1
+s	2	680.49	61	1	0
+	service time = 10.7565
+d	1	684.878	63	1	1
+s	1	684.878	64	1	0
+	service time = 24.7383
+a	2	689.74	65	1	0
+	interarrival time = 12.1031
+d	2	691.247	61	1	1
+s	2	691.247	65	1	0
+	service time = 4.5784
+d	2	695.825	65	0	0
+a	2	701.843	66	0	0
+s	2	701.843	66	1	0
+	service time = 12.6447
+	interarrival time = 20.5196
+d	1	709.617	64	0	0
+d	2	714.488	66	0	0
+a	2	722.363	67	0	0
+s	2	722.363	67	1	0
+	service time = 8.25602
+	interarrival time = 2.68468
+a	2	725.048	68	1	0
+	interarrival time = 20.8137
+d	2	730.619	67	1	1
+s	2	730.619	68	1	0
+	service time = 15.6342
+a	2	745.861	69	1	0
+	interarrival time = 9.05575
+d	2	746.253	68	1	1
+s	2	746.253	69	1	0
+	service time = 19.7583
+a	2	754.917	70	1	0
+	interarrival time = 7.29792
+a	1	762.215	71	0	0
+s	1	762.215	71	1	0
+	service time = 2.19967
+	interarrival time = 11.3976
+d	1	764.415	71	0	0
+d	2	766.011	69	1	1
+s	2	766.011	70	1	0
+	service time = 14.3299
+a	2	773.613	72	1	0
+	interarrival time = 1.66006
+a	1	775.273	73	0	0
+s	1	775.273	73	1	0
+	service time = 23.2752
+	interarrival time = 22.0433
+d	2	780.341	70	1	1
+s	2	780.341	72	1	0
+	service time = 11.9145
+d	2	792.256	72	0	0
+a	2	797.316	74	0	0
+s	2	797.316	74	1	0
+	service time = 0.477866
+	interarrival time = 32.4569
+d	2	797.794	74	0	0
+d	1	798.548	73	0	0
+a	2	829.773	75	0	0
+s	2	829.773	75	1	0
+	service time = 49.6346
+	interarrival time = 0.563383
+a	2	830.336	76	1	0
+	interarrival time = 5.93344
+a	1	836.27	77	0	0
+s	1	836.27	77	1	0
+	service time = 21.3101
+	interarrival time = 2.30249
+a	1	838.572	78	1	0
+	interarrival time = 6.37156
+a	2	844.944	79	1	1
+	interarrival time = 1.17894
+a	1	846.123	80	1	1
+	interarrival time = 25.6397
+d	1	857.58	77	1	2
+s	1	857.58	78	1	1
+	service time = 11.0167
+d	1	868.596	78	1	1
+s	1	868.596	80	1	0
+	service time = 3.10785
+d	1	871.704	80	0	0
+a	1	871.762	81	0	0
+s	1	871.762	81	1	0
+	service time = 4.26826
+	interarrival time = 17.8668
+d	1	876.031	81	0	0
+d	2	879.407	75	1	2
+s	2	879.407	76	1	1
+	service time = 9.52397
+d	2	888.931	76	1	1
+s	2	888.931	79	1	0
+	service time = 16.8639
+a	2	889.629	82	1	0
+	interarrival time = 3.66352
+a	1	893.293	83	0	0
+s	1	893.293	83	1	0
+	service time = 19.425
+	interarrival time = 12.3236
+a	1	905.616	84	1	0
+	interarrival time = 5.32846
+d	2	905.795	79	1	1
+s	2	905.795	82	1	0
+	service time = 12.9743
+a	2	910.945	85	1	0
+	interarrival time = 4.77915
+d	1	912.718	83	1	1
+s	1	912.718	84	1	0
+	service time = 7.03855
+a	1	915.724	86	1	0
+	interarrival time = 14.7559
+d	2	918.77	82	1	1
+s	2	918.77	85	1	0
+	service time = 19.3571
+d	1	919.756	84	1	1
+s	1	919.756	86	1	0
+	service time = 0.287614
+d	1	920.044	86	0	0
+a	2	930.48	87	1	0
+	interarrival time = 7.24047
+a	1	937.72	88	0	0
+s	1	937.72	88	1	0
+	service time = 11.8604
+	interarrival time = 14.8054
+d	2	938.127	85	1	1
+s	2	938.127	87	1	0
+	service time = 8.76782
+d	2	946.895	87	0	0
+d	1	949.581	88	0	0
+a	2	952.526	89	0	0
+s	2	952.526	89	1	0
+	service time = 18.0247
+	interarrival time = 0.648987
+a	2	953.175	90	1	0
+	interarrival time = 17.2898
+a	1	970.464	91	0	0
+s	1	970.464	91	1	0
+	service time = 8.05323
+	interarrival time = 17.0234
+d	2	970.55	89	1	1
+s	2	970.55	90	1	0
+	service time = 12.048
+d	1	978.518	91	0	0
+d	2	982.598	90	0	0
+a	2	987.488	92	0	0
+s	2	987.488	92	1	0
+	service time = 4.88951
+	interarrival time = 13.2392
+d	2	992.377	92	0	0
+a	2	1000.73	93	0	0
+s	2	1000.73	93	1	0
+	service time = 13.716
+	interarrival time = 2.55579
+a	2	1003.28	94	1	0
+	interarrival time = 12.1709
+d	2	1014.44	93	1	1
+s	2	1014.44	94	1	0
+	service time = 9.79579
+a	2	1015.45	95	1	0
+	interarrival time = 41.1118
+d	2	1024.24	94	1	1
+s	2	1024.24	95	1	0
+	service time = 6.52978
+d	2	1030.77	95	0	0
+a	2	1056.57	96	0	0
+s	2	1056.57	96	1	0
+	service time = 33.3156
+	interarrival time = 0.17176
+a	2	1056.74	97	1	0
+	interarrival time = 8.31963
+a	1	1065.06	98	0	0
+s	1	1065.06	98	1	0
+	service time = 9.72452
+	interarrival time = 4.99657
+a	1	1070.05	99	1	0
+	interarrival time = 9.70597
+d	1	1074.78	98	1	1
+s	1	1074.78	99	1	0
+	service time = 12.1113
+a	1	1079.76	100	1	0
+d	1	1086.89	99	1	1
+s	1	1086.89	100	1	0
+	service time = 6.77012
+d	2	1089.88	96	1	1
+s	2	1089.88	97	1	0
+	service time = 7.86585
+d	1	1093.66	100	0	0
+d	2	1097.75	97	0	0
