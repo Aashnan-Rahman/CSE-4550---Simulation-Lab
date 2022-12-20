@@ -8,7 +8,7 @@
 using namespace std;
 
 
-Server :: Server () : a_(this), d_(this)
+Server :: Server () : a_(this), d_(this), j_(this), t_(this)
 {
 	queue_ = new Queue ();
 }
@@ -39,7 +39,10 @@ void Server::create_vehic_csv()
 
 void Server :: initialize ()
 {
-	status_ = 0;
+    status_ = 1;
+    remaining_time = 500;
+    agg_length = 0;
+
 
 	itemArrived_ = 0;
 	qProduct_ = 0;
@@ -56,6 +59,8 @@ void Server :: initialize ()
 	//double t = exponential (arrivalMean_);
 	//trace_ << "interarrival time " << t << endl;
 	a_.activate(0);
+	j_.activate(0);
+	//t_.activate(2000);
 }
 
 //void Server :: createTraceFile ()
@@ -95,8 +100,9 @@ Server :: arrivalHandler ()
 
         v[1].push_back(v1);
 
-        v1.show_vehicles();
+        //v1.show_vehicles();
         v1.write_vehic_csv();
+        //cout<<Scheduler::clock_<<" "<<Scheduler::now()<<endl;
 
         vhc_cnt++;
         vhc_cnt_q1++;
@@ -113,7 +119,8 @@ Server :: arrivalHandler ()
 
         v[2].push_back(v1);
 
-        v1.show_vehicles();
+        //v1.show_vehicles();
+        //cout<<Scheduler::clock_<<" "<<Scheduler::now()<<endl;
         v1.write_vehic_csv();
 
         vhc_cnt++;
@@ -131,24 +138,50 @@ Server :: arrivalHandler ()
 
         v[3].push_back(v1);
 
-        v1.show_vehicles();
+        //v1.show_vehicles();
+        //cout<<Scheduler::clock_<<" "<<Scheduler::now()<<endl;
         v1.write_vehic_csv();
 
         vhc_cnt++;
         vhc_cnt_q3++;
     }
 
-    if(Scheduler::now() < 1005)
+    if(Scheduler::now() < 3005)
     {
-        //a_.activate(lastEventTime_ + 200);
-        a_.activate(Scheduler::now() + 200);
+        a_.activate(200);
     }
 
-    //cout<<v[1].size()<<" "<<v[3].size()<<" "<<v[2].size()<<endl;
+    cout<<"Queue Length  "<<v[1].size()<<" "<<v[3].size()<<" "<<v[2].size()<<endl;
 }
 
 void
-Server :: departureHandler () {
+Server :: junctionHandler ()
+{
+    status_ = 1+(status_++)%3;
+
+    int x = 300;
+
+
+    if(v[status_].size()>=50)
+    {
+        x += 100;
+        v[status_].erase(v[status_].begin(),v[status_].begin()+50);
+    }
+
+    cout<<x<<" "<<Scheduler::now()<<" "<<status_<<endl;
+
+    remaining_time = x;
+    agg_length = 0;
+
+    if(Scheduler::now() < 3005)
+        j_.activate(x);
+
+
+
+}
+
+
+void Server :: departureHandler () {
 	qProduct_ += queue_->length()*(Scheduler::now()-lastEventTime_);
 	totalDelay_ += Scheduler::now()-lastArrivalTime_;
 	lastEventTime_ = Scheduler::now();
@@ -175,3 +208,9 @@ Server :: departureHandler () {
 	}
 }
 
+void Server :: terminationHandler ()
+{
+   a_.cancel();
+   d_.cancel();
+   j_.cancel();
+}

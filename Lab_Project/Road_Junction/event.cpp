@@ -4,7 +4,8 @@
 #include "scheduler.h"
 
 void
-Event :: activate (double t) {
+Event :: activate (double t)
+{
 	Scheduler &s = Scheduler :: instance ();
    	stime_ = Scheduler :: now ();
 	rtime_ = stime_ + t;
@@ -26,6 +27,16 @@ ArrivalEvent :: handle () {
 void
 DepartureEvent :: handle () {
 	server->departureHandler ();
+}
+
+void
+JunctionEvent :: handle () {
+	server->junctionHandler ();
+}
+
+void
+TerminationEvent :: handle () {
+	server->terminationHandler ();
 }
 
 

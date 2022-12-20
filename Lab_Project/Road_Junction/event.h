@@ -45,6 +45,20 @@ class DepartureEvent : public Event
 		void handle ();
 };
 
+class JunctionEvent : public Event
+{
+	public:
+		JunctionEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
+class TerminationEvent : public Event
+{
+	public:
+		TerminationEvent (Server* s) : Event(s) {}
+		void handle ();
+};
+
 #endif
 
 

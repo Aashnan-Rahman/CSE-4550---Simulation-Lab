@@ -19,6 +19,8 @@ class Server
 		void initialize ();
 		void arrivalHandler ();
 		void departureHandler ();
+		void junctionHandler () ;
+		void terminationHandler () ;
 
 		void createTraceFile ();
 
@@ -34,8 +36,9 @@ class Server
 		Queue* queue_;
 		ArrivalEvent a_;
 		DepartureEvent d_;
+		JunctionEvent j_;
+		TerminationEvent t_;
 
-		int status_;
 		int itemArrived_;
 		int vhc_cnt;
 		int vhc_cnt_q1;
@@ -43,6 +46,11 @@ class Server
 		int vhc_cnt_q3;
 		Item* itemInService_;
 		ofstream trace_;
+
+        int status_;
+        int remaining_time;
+        int agg_length;
+
 
 		double arrivalMean_;
 		double departureMean_;
