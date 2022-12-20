@@ -16,16 +16,16 @@ class vehicles
         int queue_no;
         clock_t arrival_t;
         clock_t depart_t;
+        clock_t waiting_t;
 
 
     public:
         vehicles();
-        void create_vehicles();
+        void create_vehicles(int no,int q);
         int rand_g(int n);
         int vehicle_sl();
         void show_vehicles();
         void write_vehic_csv();
-        void create_vehic_csv();
 
 
     protected:
