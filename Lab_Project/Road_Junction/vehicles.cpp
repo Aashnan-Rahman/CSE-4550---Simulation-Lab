@@ -29,6 +29,7 @@ void vehicles::create_vehicles(int no,int q)
 
     depart_t = 0;
     waiting_t = 0;
+    service_t = 0;
     arrival_t = Scheduler::now();
 
 
@@ -59,7 +60,15 @@ void vehicles::write_vehic_csv()
 {
     ofstream myfile;
     myfile.open("Vehicle List.csv",ios::app);
-    myfile << serial_no << "," << queue_no << "," << type <<","<< length <<","<< speed <<","<< arrival_t <<","<< depart_t << "," << waiting_t <<"\n";
+    myfile << serial_no << "," << queue_no << "," << type <<","<< length <<","<< speed <<","<< arrival_t <<","<< depart_t << "," << service_t << "," <<waiting_t <<"\n";
+    myfile.close();
+}
+
+void vehicles::write_depart_csv(int turn_)
+{
+    ofstream myfile;
+    myfile.open("Departure Tracker.csv",ios::app);
+    myfile << turn_ << "," << serial_no << "," << queue_no << "," << type <<","<< length <<","<< speed <<","<< arrival_t <<","<< depart_t << "," << service_t << "," <<waiting_t <<"\n";
     myfile.close();
 }
 
@@ -77,4 +86,24 @@ void vehicles::show_vehicles()
     cout<<endl;
 }
 
+void vehicles::departing_info(int departing,int servicingTime)
+{
+    depart_t = departing;
+    service_t = servicingTime;
+    waiting_t = (Scheduler::now()) - departing;
+}
+
+int vehicles::can_pass(int remain, int length_to_be_covered)
+{
+    if(length + length_to_be_covered <= remain*speed ) return 1;
+    else return 0;
+}
+
+void vehicles::fetch_info(int length_, int speed_, int arrival_, int depart_)
+{
+    length_  = length;
+    speed_   = speed;
+    arrival_ = arrival_t;
+    depart_  = depart_t;
+}
 

@@ -3,8 +3,7 @@
 #include "server.h"
 #include "scheduler.h"
 
-void
-Event :: activate (double t)
+void Event :: activate (double t)
 {
 	Scheduler &s = Scheduler :: instance ();
    	stime_ = Scheduler :: now ();

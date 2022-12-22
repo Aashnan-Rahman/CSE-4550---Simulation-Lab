@@ -23,6 +23,9 @@ class Server
 		void terminationHandler () ;
 
 		void createTraceFile ();
+		void manage_junction_csv();
+		void create_vehic_csv();
+		void create_depart_csv();
 
 		inline int& status () { return (status_); }
 		inline int& itemArrived () { return (itemArrived_); }
@@ -31,6 +34,9 @@ class Server
 
 		inline double avgDelay() { return totalDelay_/itemArrived_; }
 		inline double avgQLength() { return qProduct_/lastEventTime_; }
+
+		int add=3;
+		int vehic = 5;
 
 	private:
 		Queue* queue_;
@@ -50,6 +56,7 @@ class Server
         int status_;
         int remaining_time;
         int agg_length;
+        int Junction_length=100;
 
 
 		double arrivalMean_;
@@ -63,11 +70,10 @@ class Server
 		double lastArrivalTime_;
 
 		vector<vehicles>v[4];
-		void create_vehic_csv();
+
 
 };
 #endif
-
 
 
 

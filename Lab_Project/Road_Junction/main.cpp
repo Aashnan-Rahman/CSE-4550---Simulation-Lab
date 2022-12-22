@@ -26,5 +26,8 @@ int main()
     sch->initialize();
     s->initialize();
     sch->run();
+
+    //s->show_total_cnt ();
+
     return 0;
 }
