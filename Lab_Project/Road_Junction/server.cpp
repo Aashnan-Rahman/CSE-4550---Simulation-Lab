@@ -55,6 +55,20 @@ void Server::create_depart_csv()
     myfile.close();
 }
 
+void Server::show_result ()
+{
+    cout<<endl<<endl;
+    cout<<"Signals  = "<<signals_<<endl;
+    cout<<"Departed = "<<totalDepartures_<<endl;
+    cout<<"Wait     = "<<totalWait_<<endl;
+    cout<<"Service  = "<<totalService_<<endl;
+    cout<<endl<<endl;
+
+    for(int i=0;i<totalDepartures_;i++)
+    {
+        //cout<<a[totalDepartures_]<<' ';
+    }
+}
 
 void Server :: initialize ()
 {
@@ -63,10 +77,10 @@ void Server :: initialize ()
     agg_length = 0;
 
 
-	itemArrived_ = 0;
-	qProduct_ = 0;
-	totalDelay_ = 0;
-	lastEventTime_ = 0;
+    signals_ = 1;
+    totalDepartures_ = 0;
+    totalWait_ = 0;
+    totalService_ = 0;
 
 	vhc_cnt = 0;
 	vhc_cnt_q1 = 0;
@@ -80,7 +94,7 @@ void Server :: initialize ()
 	//double t = exponential (arrivalMean_);
 	//trace_ << "interarrival time " << t << endl;
 	a_.activate(0);
-	j_.activate(1);
+	j_.activate(0);
 	//t_.activate(2000);
 }
 
@@ -88,8 +102,8 @@ void Server :: initialize ()
 void Server :: arrivalHandler ()
 {
 	//qProduct_ += queue_->length()*(Scheduler::now()-lastEventTime_);
-	lastEventTime_ = Scheduler::now();
-	lastArrivalTime_=Scheduler::now();
+	//lastEventTime_ = Scheduler::now();
+	//lastArrivalTime_=Scheduler::now();
 
 	Item* temp;
 
@@ -156,9 +170,9 @@ void Server :: arrivalHandler ()
         vhc_cnt_q3++;
     }
 
-    if(Scheduler::now() < 3005)
+    if(Scheduler::now() < 10005)
     {
-        //a_.activate(200);
+        a_.activate(100);
     }
 
     cout<<"Queue Length  "<<v[1].size()<<" "<<v[3].size()<<" "<<v[2].size()<<endl;
@@ -172,27 +186,29 @@ void Server :: junctionHandler ()
         vehicles car = v[status_][0];
 
         int length_,speed_,arrival_,depart_;
-        car.fetch_info(length_,speed_,arrival_,depart_);
+        car.fetch_info(length_,speed_,arrival_);
+
 
         if( car.can_pass(remaining_time,agg_length) )
         {
-            cout<<"YES "<<"     Car ID :"<<car.ret_id()<<"   Lane :"<<status_<<"    Time:  "<<Scheduler::now()<<" Type 2"<<endl;
+            cout<<"YES "<<"     Car ID :"<<car.ret_id()<<"   Lane :"<<status_<<"    Time:  "<<Scheduler::now()<<" Type 1"<<endl;
 
             cout << status_ << " " << v[1].size() <<" "<< v[2].size() <<" "<< v[3].size() <<endl<<endl;
             int tm = agg_length/(int)speed_;
-            d_.activate(Scheduler::now());
+            d_.activate(0);
         }
     }
 
 
     status_ = 1+(status_++)%3;
 
-    int x = 300;
+    int x = 200;
 
-    if(v[status_].size()>=50)       x += 100;
+    if(v[status_].size()>=30)       x += 100;
 
     remaining_time = x;
-    agg_length = 100;
+    agg_length = 0;
+    signals_++;
 
     //cout<<x<<" "<<Scheduler::now()<<" "<<status_<<endl;
     //v[status_].erase(v[status_].begin(),v[status_].begin()+50);
@@ -202,62 +218,57 @@ void Server :: junctionHandler ()
     myfile << Scheduler::now() << "," << status_ << "," << x <<","<< v[1].size() <<","<< v[2].size() <<","<< v[3].size() <<"\n";
     myfile.close();
 
-    if(Scheduler::now() < 3005)
+    if(Scheduler::now() < 10005)
         j_.activate(x);
 }
 
 
 void Server :: departureHandler ()
 {
-    vehicles car = v[status_][0];
-
-    int length_,speed_,arrival_,depart_;
-    car.fetch_info(length_,speed_,arrival_,depart_);
-
-    car.departing_info(Scheduler::now(), (agg_length+Junction_length)/(double)speed_);
-
-    agg_length+=length_;
-    car.write_depart_csv(status_);
-    v[status_].erase(v[status_].begin());
 
     if(v[status_].size()>0)
     {
         vehicles car = v[status_][0];
 
-        if( car.can_pass(remaining_time,agg_length))
+        int length_,speed_,arrival_,depart_,serve_,wait_;
+
+        car.fetch_info(length_,speed_,arrival_);
+
+        serve_ = (agg_length+Junction_length)/(double)speed_ ;
+        car.departing_info(serve_);
+
+        ofstream myfile;
+    myfile.open("Wait.csv",ios::app);  //,std::ios::app
+    myfile<< Scheduler::now() << "," << arrival_ <<endl;// "," << wait_<<endl;
+    myfile.close();
+
+        agg_length+=length_;
+        wait_ = Scheduler::now() - arrival_;
+        car.write_depart_csv(status_);
+        totalDepartures_++;
+
+
+        totalWait_ += wait_;
+        totalService_ += serve_ ;
+
+        v[status_].erase(v[status_].begin());
+
+        if(v[status_].size()>0)
         {
-            cout<<"YES "<<"     Car ID :"<<car.ret_id()<<"   Lane :"<<status_<<"    Time:  "<<Scheduler::now()<<" Type 2"<<endl;
-            cout << status_ << " " << v[1].size() <<" "<< v[2].size() <<" "<< v[3].size() <<endl<<endl;;
-            int tm = agg_length/(double)speed_;
-            d_.activate(Scheduler::now());
+            vehicles car1 = v[status_][0];
+
+            if(car1.can_pass(remaining_time,agg_length))
+            {
+                cout<<"YES "<<"     Car ID :"<<car1.ret_id()<<"   Lane :"<<status_<<"    Time:  "<<Scheduler::now()<<" Type 2"<<endl;
+                cout << status_ << " " << v[1].size() <<" "<< v[2].size() <<" "<< v[3].size() <<endl<<endl;;
+                int tm = agg_length/(double)speed_;
+                d_.activate(0);
+            }
         }
+
     }
 
-
-//	qProduct_ += queue_->length()*(Scheduler::now()-lastEventTime_);
-//	totalDelay_ += Scheduler::now()-lastArrivalTime_;
-//	lastEventTime_ = Scheduler::now();
-//
-//	// write to the trace file
-//	if (queue_->length() > 0) {
-//		trace_ << "d\t" << Scheduler::now () << "\t" << itemInService_->id_ << "\t" << status_ << "\t" << queue_->length() << endl;
-//	} else {
-//		trace_ << "d\t" << Scheduler::now () << "\t" << itemInService_->id_ << "\t" << 0 << "\t" << queue_->length() << endl;
-//	}
-//
-//	if (queue_->length() > 0) {
-//		itemInService_ = queue_->deque ();
-//
-//		// write to the trace file
-//		trace_ << "s\t" << Scheduler::now () << "\t" << itemInService_->id_ << "\t" << status_ << "\t" << queue_->length() << endl;
-//
-//		double t = exponential (departureMean_);
-//		//trace_ << "\tservice time = " << t << endl;
-//		d_.activate (t);
-//	} else {
-//		status () = 0;
-//		itemInService_ = 0;
-//	}
+    else return;
 }
 
 void Server :: terminationHandler ()

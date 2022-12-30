@@ -27,13 +27,15 @@ class Server
 		void create_vehic_csv();
 		void create_depart_csv();
 
-		inline int& status () { return (status_); }
-		inline int& itemArrived () { return (itemArrived_); }
-		inline double& arrivalMean () { return (arrivalMean_); }
-		inline double& departureMean () { return (departureMean_); }
+		//inline int& status () { return (status_); }
+		//inline int& itemArrived () { return (itemArrived_); }
+		//inline double& arrivalMean () { return (arrivalMean_); }
+		//inline double& departureMean () { return (departureMean_); }
 
-		inline double avgDelay() { return totalDelay_/itemArrived_; }
-		inline double avgQLength() { return qProduct_/lastEventTime_; }
+		//inline double avgDelay() { return totalDelay_/itemArrived_; }
+		//inline double avgQLength() { return qProduct_/lastEventTime_; }
+
+		void show_result ();
 
 		int add=3;
 		int vehic = 5;
@@ -56,7 +58,7 @@ class Server
         int status_;
         int remaining_time;
         int agg_length;
-        int Junction_length=100;
+        int Junction_length=50;
 
 
 		double arrivalMean_;
@@ -64,12 +66,13 @@ class Server
 		double exponential (double mean);
 		int rand_g(int n);
 
-		double qProduct_;
-		double totalDelay_;
-		double lastEventTime_;
-		double lastArrivalTime_;
+		int signals_;
+		int totalDepartures_;
+		int totalWait_;
+		double totalService_;
 
 		vector<vehicles>v[4];
+		int a[100500]={};
 
 
 };

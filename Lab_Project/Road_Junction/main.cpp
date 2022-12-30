@@ -9,16 +9,8 @@ using namespace std;
 
 int main()
 {
-    //clock_t t1 = clock();
+    srand(time(0));
     cout << "Hello world!" << endl;
-
-//    for(int i=0;i<5;i++)
-//    {
-//        vehicles v1;
-//        v1.create_vehicles();
-//        v1.show_vehicles();
-//        cout<<endl;
-//    }
 
     Scheduler * sch = new Scheduler();
     Server* s = new Server();
@@ -26,8 +18,7 @@ int main()
     sch->initialize();
     s->initialize();
     sch->run();
-
-    //s->show_total_cnt ();
+    s->show_result();
 
     return 0;
 }

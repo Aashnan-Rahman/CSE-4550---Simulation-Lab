@@ -124,6 +124,7 @@ void Scheduler :: cancel (Event *e)
 			current = current->next_;
 		}
 	}
+
 }
 
 void Scheduler :: trigger ()

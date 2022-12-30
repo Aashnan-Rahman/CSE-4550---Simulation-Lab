@@ -28,9 +28,9 @@ class vehicles
         void show_vehicles();
         void write_vehic_csv();
         void write_depart_csv(int turn_);
-        void departing_info(int departing,int servicingTime);
+        void departing_info(int servicingTime);
         int can_pass(int remain, int length_to_be_covered);
-        void fetch_info(int length_, int speed_, int arrival_, int depart_);
+        void fetch_info(int length_, int speed_, int arrival_);
         int ret_id(){ return (serial_no); }
 
 
