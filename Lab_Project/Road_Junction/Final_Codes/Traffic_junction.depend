@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1672422508 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\vehicles.cpp
+	"vehicles.h"
+	"scheduler.h"
+
+1672422370 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\vehicles.h
+	<bits/stdc++.h>
+	<ctime>
+
+1671205989 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\main.cpp
+	<bits/stdc++.h>
+	<ctime>
+	"vehicles.h"
+
+1673811449 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\main.cpp
+	<bits/stdc++.h>
+	<ctime>
+	"vehicles.h"
+	"scheduler.h"
+	"server.h"
+
+1671462845 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\queue.cpp
+	"queue.h"
+
+1671462951 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\queue.h
+
+1673335448 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\scheduler.cpp
+	"scheduler.h"
+	"event.h"
+	<bits/stdc++.h>
+	<fstream>
+
+1671888549 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\scheduler.h
+	"event.h"
+
+1671565260 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\event.h
+
+1671665392 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\event.cpp
+	"event.h"
+	"server.h"
+	"scheduler.h"
+
+1673352846 d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\server.h
+	"event.h"
+	"queue.h"
+	"vehicles.h"
+	<math.h>
+	<iostream>
+	<fstream>
+	<bits/stdc++.h>
+
+1673814057 source:d:\iut academic\5th semester\cse 4550\project\traffic_junction\traffic_junction\server.cpp
+	"server.h"
+	"scheduler.h"
+	"event.h"
+	<malloc.h>
+	<cstdlib>
+	<iostream>
+	<fstream>
+

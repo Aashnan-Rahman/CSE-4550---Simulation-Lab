@@ -1,0 +1,964 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Result.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Result.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1453 style='border-collapse:
+ collapse;table-layout:fixed;width:1090pt'>
+ <col width=70 style='mso-width-source:userset;mso-width-alt:2503;width:53pt'>
+ <col width=97 style='mso-width-source:userset;mso-width-alt:3441;width:73pt'>
+ <col width=126 style='mso-width-source:userset;mso-width-alt:4465;width:94pt'>
+ <col width=138 style='mso-width-source:userset;mso-width-alt:4892;width:103pt'>
+ <col width=134 style='mso-width-source:userset;mso-width-alt:4778;width:101pt'>
+ <col width=116 style='mso-width-source:userset;mso-width-alt:4124;width:87pt'>
+ <col width=128 style='mso-width-source:userset;mso-width-alt:4551;width:96pt'>
+ <col width=125 style='mso-width-source:userset;mso-width-alt:4437;width:94pt'>
+ <col width=135 style='mso-width-source:userset;mso-width-alt:4807;width:101pt'>
+ <col width=64 span=6 style='width:48pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 width=70 style='height:14.4pt;width:53pt;font-size:
+  11.0pt;color:white;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid black;
+  border-right:none;border-bottom:none;border-left:.5pt solid black;background:
+  black;mso-pattern:black none'>No<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=97 style='width:73pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Total Signals</td>
+  <td class=xl65 width=126 style='width:94pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Total Departures<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=138 style='width:103pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Total Waiting Time<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=134 style='width:101pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Total Service Time<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=116 style='width:87pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Avg Departures<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=128 style='width:96pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Avg Waiting Time<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=125 style='width:94pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none;background:black;mso-pattern:black none'><span
+  style='mso-spacerun:yes'> </span>Avg Service Time<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=135 style='width:101pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none;background:black;
+  mso-pattern:black none'><span style='mso-spacerun:yes'>  </span>Avg Queue
+  Length<span style='mso-spacerun:yes'> </span></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>1</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3173</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1698400</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>154450</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.5476</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>535.266</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.6763</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>37.3333</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>2</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>41</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3090</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1652800</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>146771</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.3659</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>534.887</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.4987</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>37.7073</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>3</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>41</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3078</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1663200</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>141681</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.0732</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>540.351</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>46.0302</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>37.4878</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>4</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3129</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1648900</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>150792</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.5</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>526.973</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.1918</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.7381</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>5</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3125</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1675500</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>151110</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.4048</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>536.16</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.3552</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.619</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>6</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3156</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1684800</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>160819</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.1429</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>533.84</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>50.9566</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.9286</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>7</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3134</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1642400</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>147624</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.619</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>524.059</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.104</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.5714</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>8</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3117</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1626100</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>148157</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.2143</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>521.688</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.5319</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.4048</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>9</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3111</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1634000</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>140610</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.0714</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>525.233</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>45.1977</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.5952</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>10</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3186</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1697600</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>153115</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.8571</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>532.831</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.0587</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>37.4048</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>11</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3101</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1631800</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>148731</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>73.8333</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>526.217</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.9623</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.5</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>12</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3154</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1687100</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>152632</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.0952</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>534.908</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.3932</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.8095</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>13</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3128</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1640900</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>148316</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.4762</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>524.584</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.4156</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.619</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>14</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3149</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1665200</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>154089</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.9762</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>528.803</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.9327</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.8333</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>15</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3159</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1665500</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>158300</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.2143</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>527.224</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>50.1108</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.6667</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>16</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3135</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1685800</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>145279</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.6429</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>537.735</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>46.341</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.9048</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>17</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3140</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1680800</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>150288</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74.7619</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>535.287</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.8624</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.9048</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>18</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3096</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1625300</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>149149</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>73.7143</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>524.968</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>48.1747</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.5476</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>19</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3108</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1630000</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>149160</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>74</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>524.453</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>47.9923</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.2857</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:.5pt solid black'>20</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>42</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>3157</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>1661500</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>142956</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>75.1667</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>526.291</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:none;border-left:none'>45.2822</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:none;border-left:none'>36.8571</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:.5pt solid black'>Average</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>41.9</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>3131.3</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>1659880</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>149701.45</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>74.73386</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>530.0879</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  none;border-bottom:.5pt solid black;border-left:none'>47.803415</td>
+  <td class=xl65 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid black;border-right:
+  .5pt solid black;border-bottom:.5pt solid black;border-left:none'>36.83594</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=70 style='width:53pt'></td>
+  <td width=97 style='width:73pt'></td>
+  <td width=126 style='width:94pt'></td>
+  <td width=138 style='width:103pt'></td>
+  <td width=134 style='width:101pt'></td>
+  <td width=116 style='width:87pt'></td>
+  <td width=128 style='width:96pt'></td>
+  <td width=125 style='width:94pt'></td>
+  <td width=135 style='width:101pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
